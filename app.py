@@ -54,7 +54,7 @@ def model_prediction(img):
 
     bytes_data = img.getvalue()
 
-    resp = requests.post("http://127.0.0.1:5000", files={'file': bytes_data})
+    resp = requests.post("http://18.221.149.13:5000/", files={'file': bytes_data})
 
     print(resp)
 
